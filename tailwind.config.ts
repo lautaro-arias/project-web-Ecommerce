@@ -12,8 +12,14 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
-    },
+      backgroundImage: {
+        
+        'bgEjemplo':"url('./assets/ejemplo.png')] ",
+      },
+    }, 
   },
-  plugins: [],
+  plugins: [
+    require("daisyui")
+  ],
 };
 export default config;
