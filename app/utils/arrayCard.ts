@@ -7,27 +7,27 @@ export default function arrayCard() {
   const arrayCardValores = [
     {
       id: 1,
-      title: "Hamburguesa",
+      title: "nombre de producto",
       img: pizza,
-      precio: "$2500",
+      precio: "$precio",
     },
     {
       id: 2,
-      title: "Hamburguesa",
+      title: "nombre de producto",
       img: carne,
-      precio: "$2500",
+      precio: "$precio",
     },
     {
       id: 3,
-      title: "Hamburguesa",
+      title: "nombre de producto",
       img: pizza2,
-      precio: "$2500",
+      precio: "$precio",
     },
     {
       id: 4,
-      title: "Hamburguesa",
+      title: "nombre de producto",
       img: carne2,
-      precio: "$2500",
+      precio: "$precio",
     },
   ];
 

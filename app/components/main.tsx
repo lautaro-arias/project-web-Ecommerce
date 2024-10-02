@@ -8,7 +8,7 @@ import Info from './info'
 
 export default function ComponentMain() {
   return (
-    <>
+    <div className="bg-white dark:bg-white">
         <Nav/>
         <Bannner/>
         <MasVendido/>
@@ -16,6 +16,6 @@ export default function ComponentMain() {
         <Info />
         <Footer/>
 
-    </>
+    </div>
   )
 }

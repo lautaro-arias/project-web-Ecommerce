@@ -3,7 +3,7 @@ import React from 'react'
 export default function Bannner() {
   return (
     <>
-      <section className="justify-center backdrop-blur bg-[url('./assets/ejemplo.png')] max-h-screen-sm bg-cover  bg-end bg-no-repeat">
+      <section id={'banner'} className="justify-center bg-[url('./assets/ejemplo.png')] dark:bg-[url('./assets/ejemplo.png')] max-h-screen-sm bg-cover  bg-end bg-no-repeat">
         <div className=" py-24">
           <div className="mx-auto flex w-full text-left">
             <div className="relative mx-auto inline-flex items-center align-middle">
@@ -12,12 +12,12 @@ export default function Bannner() {
                   className="mb-8 flex max-w-4xl mx-auto justify-center text-center text-lg font-semibold leading-none tracking-tight text-gray-800 md:text-xl lg:max-w-3xl">
                   ¿Que estas buscando? 
                 </h1>
-                <label className="input input-bordered flex items-center gap-2">
-                  <input type="text" className="grow" placeholder="Search" />
+                <label className="input input-bordered flex items-center dark:bg-white gap-2">
+                  <input type="text" className="grow dark:bg-white" placeholder="Search"   />
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 16 16"
-                    fill="currentColor"
+                    fill="dark:fill-gray-400"
                     className="h-4 w-4 opacity-70">
                     <path
                       fillRule="evenodd"

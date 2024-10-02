@@ -3,7 +3,7 @@ import Carousel from './carousel'
  
 export default function MasVendido() {
     return (
-        <section className="text-gray-600 body-font">
+        <section id={'masPedido'} className="text-gray-600 body-font">
             <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
             <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
                     <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-black">Lo mas pedido</h1>

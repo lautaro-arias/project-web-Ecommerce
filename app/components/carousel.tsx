@@ -17,10 +17,10 @@ export default function Carousel() {
     return (
         <>
             <CarouselCompu />
-            <div className="carousel md:hidden w-full overflow-hidden relative">
-                <div className="flex transition-transform ease-out duration-500" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
+            <div className=" carousel md:hidden w-full overflow-hidden relative">
+                <div className="flex  transition-transform ease-out duration-500" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
                     {/* Slide 1 */}
-                    <div id="slide1" className="carousel-item w-full flex-shrink-0 flex justify-center items-center">
+                    <div id="slide1" className="carousel-item w-full flex-shrink-0 ">
                         <div className="transition-transform transform hover:scale-105 p-4 w-full max-w-sm">
                             <a className="block relative h-48 w-full rounded overflow-hidden">
                                 <img className="h-full w-96 object-cover " src="https://dummyimage.com/422x262" alt="Slide 1" />
@@ -74,9 +74,9 @@ export default function Carousel() {
                 </div>
 
                 {/* Botones de navegación */}
-                <div className="absolute top-1/2 left-7 right-7 transform -translate-y-1/2 flex justify-between">
-                    <button onClick={prevSlide} className="btn btn-circle">❮</button>
-                    <button onClick={nextSlide} className="btn btn-circle">❯</button>
+                <div className="absolute top-1/2  left-7 right-7 transform -translate-y-1/2 flex justify-between">
+                    <button onClick={prevSlide} className="btn btn-circle text-black dark:bg-white ">❮</button>
+                    <button onClick={nextSlide} className="btn btn-circle text-black dark:bg-white">❯</button>
                 </div>
             </div>
         </>
