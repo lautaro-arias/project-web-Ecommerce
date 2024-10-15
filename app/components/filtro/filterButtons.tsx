@@ -7,7 +7,7 @@ export default function FilterButtons({ showModal }: { showModal: () => void }) 
     const [showInput, setShowInput] = useState(false);
 
     const toggleInput = () => {
-        setShowInput(!showInput);
+        setShowInput(!showInput); 
     };
     return (
         <div className="mt-8 sm:flex sm:items-center sm:justify-center">
