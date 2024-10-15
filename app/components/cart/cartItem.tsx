@@ -31,7 +31,6 @@ export default function CartItem({ item, onRemove}:{ item: Product, onRemove: ()
                     <div className="flex flex-1 items-center justify-end gap-2">
                         <form>
                             <label htmlFor="Line3Qty" className="sr-only"> Quantity </label>
-
                             <h3
 
                                 id="Line3Qty"
@@ -40,10 +39,8 @@ export default function CartItem({ item, onRemove}:{ item: Product, onRemove: ()
                                 {item.quantity}
                             </h3>
                         </form>
-
                         <button onClick={onRemove} className="text-gray-600 transition hover:text-red-600">
                             <span className="sr-only">Remove item</span>
-
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
@@ -62,7 +59,6 @@ export default function CartItem({ item, onRemove}:{ item: Product, onRemove: ()
                     </div>
                 </li>
             </ul>
-
         </>
     )
 }
