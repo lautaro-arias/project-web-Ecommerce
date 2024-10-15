@@ -1,12 +1,14 @@
-//import React from 'react'
-/*
-export default function CartItem({ item, onRemove, _id }: any) {
+import React from 'react'
+import { Product } from "@/app/interface/useInterfaceProduct";
+
+export default function CartItem({ item, onRemove}:{ item: Product, onRemove: () => void, }) {
+    
     return (
         <>
             <ul key={item._id} className="space-y-4">
                 <li className="flex items-center gap-4">
                     <img
-                        src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=830&q=80"
+                        src='https://images.unsplash.com/photo-1628202926206-c63a34b1618f?q=80&w=2574&auto=format&fit=crop'
                         alt=""
                         className="size-16 rounded object-cover"
                     />
@@ -15,13 +17,13 @@ export default function CartItem({ item, onRemove, _id }: any) {
 
                         <dl className="mt-0.5 space-y-px text-[10px] text-gray-600">
                             <div>
-                                <dt className="inline">Precio:</dt>
-                                <dd className="inline">$ {item.precio}</dd>
+                                <dt className="inline">price:</dt>
+                                <dd className="inline">$ {item.price}</dd>
                             </div>
 
                             <div>
                                 <dt className="inline">Marca:</dt>
-                                <dd className="inline">{item.marca}</dd>
+                                <dd className="inline">{item.brand}</dd>
                             </div>
                         </dl>
                     </div>
@@ -33,7 +35,7 @@ export default function CartItem({ item, onRemove, _id }: any) {
                             <h3
 
                                 id="Line3Qty"
-                                className="h-8 w-12 rounded border-gray-200 bg-gray-50 p-0 text-center text-xs text-gray-600 [-moz-appearance:_textfield] focus:outline-none [&::-webkit-inner-spin-button]:m-0 [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:m-0 [&::-webkit-outer-spin-button]:appearance-none"
+                                className="py-2 px-2 rounded border border-gray-200 bg-gray-100 text-center text-xs text-gray-600 [-moz-appearance:_textfield] focus:outline-none [&::-webkit-inner-spin-button]:m-0 [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:m-0 [&::-webkit-outer-spin-button]:appearance-none"
                             >
                                 {item.quantity}
                             </h3>
@@ -64,4 +66,3 @@ export default function CartItem({ item, onRemove, _id }: any) {
         </>
     )
 }
-*/
