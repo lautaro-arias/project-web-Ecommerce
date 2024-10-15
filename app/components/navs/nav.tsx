@@ -62,7 +62,6 @@ export default function Nav() {
                             </ul>
                         </div>
                         <div className="navbar-end">
-                           
                             <IconCart />
                         </div>
                     </div>
